@@ -1,1 +1,163 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <i class="fas fa-graduation-cap"></i>
+        ITS Student Management System
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Students</a></li>
+        <li><a href="#">About</a></li>
+        <li><i class="fas fa-user-circle user-icon"></i></li>
+      </ul>
+    </nav>
 
+    <div class="container">
+      <div class="card">
+        <h2>Form Student</h2>
+        <form>
+          <div class="form-group">
+            <label for="nrp">NRP</label>
+            <input
+              type="text"
+              id="nrp"
+              class="form-control"
+              placeholder="Masukkan NRP"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              type="text"
+              id="nama"
+              class="form-control"
+              placeholder="Masukkan nama lengkap"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="jurusan">Jurusan</label>
+            <select id="jurusan" class="form-control">
+              <option value="">Pilih Jurusan</option>
+              <option value="Informatika">Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Teknik Komputer">Teknik Komputer</option>
+              <option value="Manajemen">Manajemen</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Masukkan email"
+            />
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-save"></i> Simpan
+            </button>
+            <button type="button" class="btn btn-secondary">Batal</button>
+            <button type="reset" class="btn btn-danger">
+              <i class="fas fa-sync-alt"></i> Reset
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="table-header">
+          <h2>Data Mahasiswa</h2>
+          <div class="search-box">
+            <input type="text" placeholder="Cari mahasiswa..." />
+            <button type="button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>NRP</th>
+              <th>Nama</th>
+              <th>Jurusan</th>
+              <th>Email</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>5025261003</td>
+              <td>Andi Pratama</td>
+              <td>Informatika</td>
+              <td>andi@mail.com</td>
+              <td class="action-btns">
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>5025261012</td>
+              <td>Siti Aisyah</td>
+              <td>Sistem Informasi</td>
+              <td>siti@mail.com</td>
+              <td class="action-btns">
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>5025261027</td>
+              <td>Budi Santoso</td>
+              <td>Teknik Komputer</td>
+              <td>budi@mail.com</td>
+              <td class="action-btns">
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <button>&laquo;</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>&raquo;</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
